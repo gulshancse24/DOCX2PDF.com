@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Converter</title>
+
+  <style>
+    html {
+      background-color: #C78F6B;
+      text-align: center;
+      padding: 200px;
+    }
+
+    input[type=text] {
+      width: 350px;
+      height: 35px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    input[type=submit] {
+      width: 350px;
+      height: 35px;
+      text-align: center;
+      background: #B97346;
+      border-radius: 10px;
+      border-color: black;
+      border-style: dashed;
+      border-width: 2px;
+      font-family: "Calibri Light";
+      font-weight: bold;
+      font-size: 100%;
+      cursor: pointer;
+    }
+
+    input[type=file] {
+      background-color: #B97346;
+      border-radius: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 25px;
+      margin: 15px;
+      border-style: dashed;
+      border-width: 2px;
+      font-family: "Calibri Light";
+      font-size: 100%;
+    }
+
+    input[type=file]::-webkit-file-upload-button {
+      content: "Choose";
+      cursor: pointer;
+      margin-top: 25px;
+      display: inline-block;
+      padding: 6px;
+      padding-right: 29px;
+      padding-left: 29px;
+      font-family: "Calibri Light";
+      font-size: 100%;
+      font-style: italic;
+      border-radius: 10px;
+      border-width: 1px;
+      border-color: black;
+      border-style: dashed;
+      background-color: #C78F6B;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="main.php" method="post" enctype="multipart/form-data">
+    <h1>This is DOCX to PDF Converter By Gulshan Kumar</h1>
+    <h3>You can Upload Your MicroSoft Word File And Simply Download it into PDF </h3>
+    <input type="file" class="file" accept=".docx" name="file" required>
+    <br><br>
+    <input type="submit" value="D o w n l o a d  T h e  P D F  F i l e">
+
+  </form>
+</body>
+
+</html>
